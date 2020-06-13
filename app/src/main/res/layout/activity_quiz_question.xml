@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:padding="15dp"
             android:layout_margin="5dp"
-            android:text="Submit" />
+            android:text="SUBMIT" />
 
 
     </LinearLayout>

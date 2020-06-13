@@ -7,7 +7,11 @@ import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 class MainActivity : AppCompatActivity() {
+    var userName=""
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             if (etName.text.isNullOrEmpty())
                 Toast.makeText(this, "Please Write Your Name!", Toast.LENGTH_LONG).show()
             else{
+                userName=etName.text.toString()
                 val intent= Intent(this,QuizQuestionActivity::class.java)
                 startActivity(intent)
                 finish()
